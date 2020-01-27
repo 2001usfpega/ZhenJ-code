@@ -42,7 +42,7 @@ public class Q14{
 	public static void squareRoot() {
 		System.out.println("Which number's square root do u want to compute?");
 		Double num = input.nextDouble();
-		System.out.println("the square root of " + num + " is: " + Math.sqrt(num) +"\n\n\n");
+		System.out.println("the square root of " + num + " is: " + Math.sqrt(num) +"\n");
 	}
 	
 	public static void dateOfToday() {

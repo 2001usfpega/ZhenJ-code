@@ -1,8 +1,10 @@
-package com.revature.Driver;
+package com.revature.JunitTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.revature.Driver.Q15;
 
 class TestQ15 {
 
@@ -18,7 +20,7 @@ class TestQ15 {
 		double expecteds3 = 36;
 		double expecteds4 = 4;
 		
-		System.out.println("haha");
+
 		
 		assertEquals(expecteds1,  test.addition(a, b));
 		assertEquals(expecteds2,  test.subtraction(a, b));

@@ -1,8 +1,7 @@
 package com.revature.Driver;
 
-public abstract class Q18parent {
+public abstract class Q18parent extends Q18GrandParent{
 
-	public abstract boolean isUppercase(String str);
 	
 	public abstract String toLowerCase(String str);
 	

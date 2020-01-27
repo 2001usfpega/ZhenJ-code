@@ -1,8 +1,10 @@
-package com.revature.Driver;
+package com.revature.JunitTest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import com.revature.Driver.Q6;
 
 class TestQ6 {
 

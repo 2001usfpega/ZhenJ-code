@@ -2,7 +2,7 @@ package com.revature.Driver;
 
 import java.util.Comparator;
 
-class Q7_SortEmployeesByDepartment implements Comparator<Employee> 
+public class Q7_SortEmployeesByDepartment implements Comparator<Employee> 
 { 
     // sorting in ascending order of 
     // department 

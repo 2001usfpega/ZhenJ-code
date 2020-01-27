@@ -7,8 +7,12 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Driver {
+	
 
-	public static void main(String[] args) throws FileNotFoundException {
+
+	public static void main(String[] args){
+		
+
 		
 		System.out.println("Q1:");
 		Q1 q1 = new Q1();
@@ -53,8 +57,6 @@ public class Driver {
 		String str = "abcdefghijklmn";  //put your string here
 		int idx = 7;
 		String strQ5  = q5.substring(str , idx);
-		
-		
 		System.out.println( strQ5  + "\n");
 		
 		
@@ -212,11 +214,16 @@ public class Driver {
 		
 		System.out.println("Q20:");
 		Q20 q20 = new Q20();
-		File file = new File("/Users/jinjunzhen/Desktop/revature/BatchSource/"
-				+ "JavaCoreAssignment/src/com/revature/Driver/Data.txt");
+		File file = new File("Q20.txt");
 		
 		@SuppressWarnings("resource")
-		Scanner scan = new Scanner(file);
+		Scanner scan = null;
+		try {
+			scan = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String content = "";
 		
 		while (scan.hasNextLine()) {
@@ -226,11 +233,7 @@ public class Driver {
 		q20.workingAt20(content);
 		System.out.println("\n");
 		
-		
-
-		// FileWrite writer = new FileWriter("/User/......fileName");
-		// writer.write(fileContent);
-		// writer.close();
+	
 		
 		
 		

@@ -1,4 +1,4 @@
-package com.revature.Driver;
+package com.revature.JunitTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import org.junit.jupiter.api.Test;
+
+import com.revature.Driver.Employee;
+import com.revature.Driver.Q7_SortEmployeesByDepartment;
 
 class TestQ7_SortEmployeesByDepartment {
 
