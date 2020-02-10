@@ -1,0 +1,35 @@
+package project1.reimbursement.services;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.controller.LoginController1;
+
+public class RequestHelper {
+
+	public static String process(HttpServletRequest req){
+		System.out.println(req.getRequestURI());
+		
+		switch(req.getRequestURI()) {
+		case "/Showmethemoney/toLogIn":
+			
+			return LoginController1.login(req);   //good 
+			
+			
+			
+			
+			
+			
+		case "/Showmethemoney/toEmployeeLogIn":
+
+			
+			return EMP_LoginController.login(req);
+			
+			
+			
+		default:
+			
+			
+			return FIN_LoginController.login(req);
+		}
+	}
+}

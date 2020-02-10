@@ -1,0 +1,28 @@
+package project1.reimbursement.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class EMP_LoginController {
+	
+	public static String login(HttpServletRequest req) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

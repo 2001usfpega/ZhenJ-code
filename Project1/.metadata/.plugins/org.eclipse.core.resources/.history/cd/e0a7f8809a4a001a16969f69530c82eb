@@ -1,0 +1,55 @@
+package project1.reimbursement.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.model.SuperVillain;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import project1.reimbursement.Dao.TicketDao;
+import project1.reimbursement.models.Ticket;
+
+public class LoginController {
+
+	public static String login(HttpServletRequest req) {
+		
+
+		if(!req.getMethod().equals("POST")) {  //get out ~!!!    get  get  
+			return "resources/html/login.html";
+		}
+		
+		String username= req.getParameter("username-applicant");
+		String password= req.getParameter("password-applicant");
+		
+		TicketDao td = new TicketDao();
+		List<Ticket> tickes = new ArrayList<>();
+		System.out.println(td.selectAllTickets());
+		
+		/*
+		 * for YOUR project, you won't hardcode "cheese" and "louise" you'll go to the DB
+		 * and find the ACTUAL password that should be used, base on the username they typed
+		 * in.
+		 */
+		if(!(username.equals("cheese") && password.equals("louise"))) {
+			return "wrongcreds.change";
+		}else {
+			/*
+			 * in YOUR project, you'll be storing an entire User object in the session
+			 * which will ALSO contain whether it is an manager or employee
+			 */
+			req.getSession().setAttribute("loggedusername", username);
+			req.getSession().setAttribute("loggedpassword", password);
+			return "home.change";
+		}
+	}
+}
+
+
+//	SuperVillain billy = new SuperVillain("Billy", "Imprisonment", 225_000);
+//
+//	res.getWriter().write(new ObjectMapper().writeValueAsString(billy));

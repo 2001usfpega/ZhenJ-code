@@ -1,0 +1,21 @@
+import project1.reimbursement.Dao.EmployeeDao;
+
+public class DaoTesting {
+
+	private static String url= System.getenv("DB_URL");
+	private static String username= System.getenv("DB_showmethemoney");
+	private static String password=System.getenv("DB_pw");
+	
+	
+	public static void main(String[] args) {
+		
+		
+		EmployeeDao ed = new EmployeeDao();
+		
+		ed.insertEmployee("jinjinjun", "123", "jinjun", "zhen", false);
+		System.out.println();
+		
+
+	}
+
+}

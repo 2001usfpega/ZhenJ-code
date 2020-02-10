@@ -1,0 +1,49 @@
+package project1.reimbursement.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import project1.reimbursement.models.Employee;
+
+public class DecisionController {
+	
+	
+	
+	public static void show(HttpServletRequest req,HttpServletResponse res) throws JsonProcessingException, IOException {
+		String str = "<div class=\"login-container\">\n" + 
+				"		<div class=\"form-group\">\n" + 
+				"				<table border=\"2\" class=\"table\" id=\"reimbtable\">\n" + 
+				"					<tr>\n" + 
+				"						<th>User Id</th>\n" + 
+				"						<th>First Name</th>\n" + 
+				"						<th>Last Name</th>\n" + 
+				"						<th>Type</th>\n" + 
+				"						<th>Amount</th>\n" + 
+				"						<th>Date submitted</th>\n" + 
+				"						<th>Date resolved</th>\n" + 
+				"						<th>Status</th>\n" + 
+				"						<th>Description</th>\n" + 
+				"						<th>Ticket Id</th>\n" + 
+				"						<th></th>\n" + 
+				"					</tr>\n" + 
+				"				</table>\n" + 
+				"			</div>\n" + 
+				"	</div>";
+		List<Employee> le = new ArrayList<>();
+		
+
+		
+		PrintWriter out = res.getWriter();
+		out.println("<html><body>" + str
+				+ "</h1></body></html>");
+
+
+	}
+}

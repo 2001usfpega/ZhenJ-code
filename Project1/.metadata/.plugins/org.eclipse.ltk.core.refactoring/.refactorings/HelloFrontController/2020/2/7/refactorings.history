@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JSONRequestHelper.java&apos; to &apos;Showmethemoney/src/main/java/project1.reimbursement.services&apos;&#x0A;- Original project: &apos;HelloFrontController&apos;&#x0A;- Destination element: &apos;Showmethemoney/src/main/java/project1.reimbursement.services&apos;&#x0A;- Original element: &apos;com.example.JSONmasterservlet.JSONRequestHelper.java&apos;" description="Copy compilation unit" destination="=Showmethemoney/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;project1.reimbursement.services" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.JSONmasterservlet{JSONRequestHelper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1581293162378" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package project1.reimbursement.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class toTicketSolution_Controller {
+
+	public static String handleTicket(HttpServletRequest req) {
+		
+		
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+
+
+
+	
+}

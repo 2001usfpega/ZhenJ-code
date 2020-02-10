@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ticket Decision</title>
+<link rel=stylesheet type="text/css"
+	href="/Showmethemoney/resources/css/mystyles.css">
+</head>
+<div class="login-container">
+	<div class="form-group">
+		<table border="2" class="table" id="reimbtable">
+			<tr>
+				<th>ticket_id</th>
+				<th>ticket_type</th>
+				<th>amount</th>
+				<th>date_submitted</th>
+				<th>date_resolved</th>
+				<th>status</th>
+				<th>c_description</th>
+				<th>Status</th>
+				<th>Description</th>
+				<th>Ticket Id</th>
+			</tr>
+			
+		</table>
+	</div>
+
+</div>
+</body>
+</html>

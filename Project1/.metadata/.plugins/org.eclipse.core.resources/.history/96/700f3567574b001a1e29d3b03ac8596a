@@ -1,0 +1,31 @@
+package project1.reimbursement.controller;
+
+public class EMP_LoginController {
+	
+	if(!req.getMethod().equals("POST")) {  //get out ~!!!    get  get  
+		return "resources/html/Login.html";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

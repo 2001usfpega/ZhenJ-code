@@ -1,0 +1,30 @@
+package project1.reimbursement.services;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import project1.reimbursement.controller.Decision_Controller;
+
+public class DecisionRequestHelper {
+
+	public static String process(HttpServletRequest req, HttpServletResponse res) throws JsonProcessingException, IOException
+	{
+		System.out.println(req.getRequestURI());
+		
+		switch(req.getRequestURI()) {
+		case "/Showmethemoney/toDecision":
+			Decision_Controller.makeDecision(req, res);
+			break;
+
+		default:
+
+			return "resources/html/404.html";
+		}
+	}
+}

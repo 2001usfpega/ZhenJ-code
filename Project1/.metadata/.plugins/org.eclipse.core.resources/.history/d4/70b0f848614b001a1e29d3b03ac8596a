@@ -1,0 +1,22 @@
+package project1.reimbursement.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.Dao.EmployeeDao;
+import project1.reimbursement.models.Employee;
+
+public class LoginController2 {
+
+	public static String login(HttpServletRequest req) {
+		
+		
+
+
+		return "haha";
+	}
+}
+
+
+//	SuperVillain billy = new SuperVillain("Billy", "Imprisonment", 225_000);
+//
+//	res.getWriter().write(new ObjectMapper().writeValueAsString(billy));

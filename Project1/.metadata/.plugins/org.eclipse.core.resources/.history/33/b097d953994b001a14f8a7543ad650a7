@@ -1,0 +1,19 @@
+package project1.reimbursement.services;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.example.model.SuperVillain;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class DecisionRequestHelper {
+
+	public static void process(HttpServletRequest req, HttpServletResponse res) throws JsonProcessingException, IOException
+	{
+		
+		
+	}
+}

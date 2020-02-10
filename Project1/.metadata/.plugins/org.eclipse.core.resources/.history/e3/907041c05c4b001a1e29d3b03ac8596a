@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<H1>Oh this is a 404 page </H1>
+
+<div class="login-container">
+		<!-- FRONT CONTROLLER EXAMPLE -->
+		
+
+		<form method="post" action="/Showmethemoney/homepage">
+			<p>log in for applicant!</p>
+			<input placeholder="enter username" name="username-applicant" /><br>
+			<input placeholder="enter password" name="password-applicant" /><br>
+			<input type="submit" value="Login" />
+		</form>
+		
+
+	</div>
+</body>
+</html>

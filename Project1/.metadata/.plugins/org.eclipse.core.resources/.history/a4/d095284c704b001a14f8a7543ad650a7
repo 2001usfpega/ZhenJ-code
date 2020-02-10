@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Showmethemoney</display-name>
+  <welcome-file-list>
+    <welcome-file>/resources/html/homepage.html</welcome-file>
+    							
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>12</servlet-name>
+    <servlet-class>project1.reimbursement.services.MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>12</servlet-name>
+    <url-pattern>/toTicketAppication</url-pattern>
+    <url-pattern>/toEmployeeLogIn</url-pattern>
+    <url-pattern>/toFinaceLogIn</url-pattern>
+    <url-pattern>/NewExpense.do</url-pattern>
+
+    
+    
+  </servlet-mapping>
+</web-app>
+
+
+<!-- <servlet>
+    <servlet-name>MasterServlet</servlet-name>
+    <servlet-class>com.example.servlets.MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MasterServlet</servlet-name>
+    <url-pattern>*.change</url-pattern>
+    <url-pattern>/api/*</url-pattern>
+    <url-pattern>/MasterServlet</url-pattern>
+    <url-pattern>/wumpus</url-pattern>
+  </servlet-mapping> -->

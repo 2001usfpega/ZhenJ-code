@@ -1,0 +1,47 @@
+package project1.reimbursement.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.Dao.EmployeeDao;
+import project1.reimbursement.models.Employee;
+
+public class Ticket_submit_Controller {
+
+	public static String login(HttpServletRequest req) {
+//		boolean flag = true;
+//		if (flag) {
+//			return "resources/html/TicketApply.html";
+//		}
+
+		if(!req.getMethod().equals("POST")) {  //get out ~!!!    get  get  
+			return "resources/html/TicketApply";
+		}
+
+		
+		String type = req.getParameter("type");
+		String Amount = req.getParameter("Amount");
+		String Description = req.getParameter("Amount");
+		
+
+
+		EmployeeDao ed = new EmployeeDao();
+		Employee employee = new Employee();
+
+		employee = ed.selectEmployeeByUserName(username);
+		
+		if (employee == null )
+			return "resources/html/toEmployeeLogIn";
+
+
+		if ( employee.getPassword().contentEquals(password)) {
+
+			req.getSession().setAttribute("loggedusername", username);
+			req.getSession().setAttribute("loggedpassword", password);
+
+			return "resources/html/TicketApply.html";
+		} else {
+			//if login fail
+			return "resources/html/toEmployeeLogIn";
+		}
+	}
+}

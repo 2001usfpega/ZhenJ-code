@@ -1,0 +1,31 @@
+package project1.reimbursement.services;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.controller.DecisionController;
+import project1.reimbursement.controller.DecisionControllerEnd;
+
+
+
+public class DecisionHelper {
+
+	
+	
+	public void  process(HttpServletRequest req){
+		System.out.println(req.getRequestURI());
+
+		switch(req.getRequestURI()) {
+
+		case "/Showmethemoney/toDecision":			// employee login 
+ 
+			DecisionController.show(req);
+
+
+		default:
+
+			DecisionControllerEnd.show(req);
+		}
+
+
+	}
+}

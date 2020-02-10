@@ -1,0 +1,28 @@
+package project1.reimbursement.services;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.controller.LoginController1;
+
+public class RequestHelper {
+
+	public static String process(HttpServletRequest req){
+		System.out.println(req.getRequestURI());
+		
+		switch(req.getRequestURI()) {
+		case "/Showmethemoney/toLogIn":
+			System.out.println("toLogIn");
+			return LoginControlle_toEmployeeLogIn.login(req);
+			
+			
+		case "/Showmethemoney/toEmployeeLogIn":
+			return LoginController1.login(req);
+		default:
+			
+			
+			
+			System.out.println("in default case");
+			return "resources/html/badlogin.html";
+		}
+	}
+}

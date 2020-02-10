@@ -1,0 +1,42 @@
+package project1.reimbursement.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import project1.reimbursement.Dao.EmployeeDao;
+import project1.reimbursement.models.Employee;
+
+public class LoginController1 {
+
+	public static String login(HttpServletRequest req) {
+		
+		return "resources/html/EmployeeHome.html"
+
+
+//		if(!req.getMethod().equals("POST")) {  //get out ~!!!    get  get  
+//			return "resources/html/login.html";
+//		}
+//
+//		String username= req.getParameter("username-applicant");
+//		String password= req.getParameter("password-applicant");
+//
+//		EmployeeDao ed = new EmployeeDao();
+//		Employee employee = new Employee();
+//
+//		employee = ed.selectEmployeeByUserName(username);
+//
+//		if (employee.getUser_name().contentEquals(password)) {
+//
+//			req.getSession().setAttribute("loggedusername", username);
+//			req.getSession().setAttribute("loggedpassword", password);
+//
+//			return "resources/html/EmployeeHome.html";
+//		} else {
+//			return "wrongcreds.change";
+//		}
+	}
+}
+
+
+//	SuperVillain billy = new SuperVillain("Billy", "Imprisonment", 225_000);
+//
+//	res.getWriter().write(new ObjectMapper().writeValueAsString(billy));

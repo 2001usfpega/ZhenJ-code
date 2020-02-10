@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>34</title>
+</head>
+<body>
+
+
+
+	<form class="" id="TypeForm" method="POST" action="toTicketSolution">
+		<input type="number" class="form-control"
+					name="Amount" aria-label="Amount (to the nearest dollar)">
+			<div class="dropdown">
+				<select class="btn-lg" class="ui dropdown" name="handle_ticket"
+					form="TypeForm">
+					<option value="" selected disabled>Result</option>
+					<option value="Approved">Approved</option>
+					<option value="Denied">Denied</option>
+				</select> <br /> <br />
+			</div></form>
+			
+
+
+
+
+
+</body>
+</html>

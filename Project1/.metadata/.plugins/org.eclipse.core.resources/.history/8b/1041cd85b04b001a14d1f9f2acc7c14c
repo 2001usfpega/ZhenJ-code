@@ -1,0 +1,31 @@
+package project1.reimbursement.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import project1.reimbursement.models.Employee;
+
+public class DecisionController {
+	
+	
+	
+	public static void show(HttpServletRequest req,HttpServletResponse res) throws JsonProcessingException, IOException {
+		String str = "sdvfee";
+		List<Employee> le = new ArrayList<>();
+		
+
+		
+		PrintWriter out = res.getWriter();
+		out.println("<html><body><h1>The Servlet is directly talking to the" + str
+				+ " client!</h1></body></html>");
+
+
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee" version="2.5">
+  <display-name>Showmethemoney</display-name>
+  <welcome-file-list>
+    <welcome-file>/resources/html/homepage.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <servlet-name>12</servlet-name>
+    <servlet-class>project1.reimbursement.services.MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>12</servlet-name>
+    <url-pattern>/toTicketSubmit</url-pattern>
+    <url-pattern>/toTicketApply</url-pattern>
+    <url-pattern>/toEmployeeLogIn</url-pattern>
+    <url-pattern>/toFinaceLogIn</url-pattern>
+    <url-pattern>/toTicketManagement</url-pattern>
+    <url-pattern>/toDecision</url-pattern>
+    <servlet-class>toTicketSolution</servlet-class>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <servlet-name>14</servlet-name>
+    <servlet-class>project1.reimbursement.services.DecisionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>14</servlet-name>
+  </servlet-mapping>
+</web-app>

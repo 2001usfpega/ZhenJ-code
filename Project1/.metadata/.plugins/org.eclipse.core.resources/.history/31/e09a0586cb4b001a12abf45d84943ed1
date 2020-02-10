@@ -1,0 +1,18 @@
+import project1.reimbursement.Dao.EmployeeDao;
+
+public class DaoTesting {
+
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println("hfgxfghfjgch");
+		EmployeeDao ed = new EmployeeDao();
+
+		ed.insertEmployee("admin", 123, "Meimei", "Hang", true);
+
+		System.out.println(ed.selectAllEmployees());
+
+	}
+
+}

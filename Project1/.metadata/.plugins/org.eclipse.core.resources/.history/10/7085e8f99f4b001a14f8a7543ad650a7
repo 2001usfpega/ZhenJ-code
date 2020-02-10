@@ -1,0 +1,28 @@
+package project1.reimbursement.services;
+
+import javax.servlet.http.HttpServletRequest;
+
+
+
+public class DecisionHelper {
+
+	
+	
+	public static String process(HttpServletRequest req){
+		System.out.println(req.getRequestURI());
+
+		switch(req.getRequestURI()) {
+
+		case "/Showmethemoney/toDecision":			// employee login 
+
+//			return "resources/html/emp_Login.html";  
+			return "resources/html/404.html";
+
+
+		default:
+
+			return "resources/html/404.html";
+		}
+
+	}
+}
